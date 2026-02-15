@@ -3,7 +3,7 @@ const CACHE_NAME = 'travel-weather-v1';
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(CACHE_NAME).then((cache) =>
-      cache.addAll(['/', '/index.html'])
+      cache.addAll(['/travel-weather/', '/travel-weather/index.html'])
     )
   );
   self.skipWaiting();
